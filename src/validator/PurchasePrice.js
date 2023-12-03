@@ -13,7 +13,7 @@ const PurchasePriceValidator = {
   },
   isDividedByPrice(input) {
     if (input % 1000 !== 0) {
-      throw new Error(ERROR_MSG.NOT_DIVIDED_BY_PRICE);
+      throw new Error(ERROR_MSG.PURCHASE_PRICE.NOT_DIVIDED_BY_PRICE);
     }
   },
 
@@ -23,3 +23,5 @@ const PurchasePriceValidator = {
     this.isDividedByPrice(input);
   },
 };
+
+export default { PurchasePriceValidator };
